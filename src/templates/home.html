@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}home.html{% endblock %}
+
+{% block extra-style %}
+<style type="text/css">
+.home-image {
+    background-image: url("{% static 'img/suzy.gif' %}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 600px;
+    border-top: 5px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    padding: 5px 0 0 0px;
+}
+.row{
+	padding-bottom : 30px;
+}
+.font{
+	color : #343a40;
+}
+
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="home-image">
+        <h1 class="title"></h1>
+        <h3 class="powered"></h3>
+    </div>
+
+    <hr style="margin: 5px 0;">
+
+    <div class="row text-center">
+        <div class="col-sm-6">
+            <h3>Bookmark</h3>
+            <p>국내 · 외 Glasses 브랜드 홈페이지를 모아놨다.</p>
+        </div>
+        <div class="col-sm-6">
+            <h3>Blog</h3>
+            <p>국내 · 외 Glasses 블로그 리뷰들을 볼 수 있다.</p>
+        </div>
+        <div class="col-sm-6">
+            <h3>Photo</h3>
+            <p>Glasses 사진을 볼 수 있다.</p>
+        </div>
+        <div class="col-sm-6">
+            <h3>설문조사</h3>
+            <p>Glasses에 관한 설문조사를 할 수 있다.</p>
+        </div>
+        <div class="col-sm-6">
+            <h3>Chat Bot</h3>
+            <p>Glasses에 관한 정보를 챗봇을 통해 얻을 수 있다.</p>
+        </div>
+        <div class="col-sm-6">
+            <h2>검색하기</h2>
+            <p>원하는 상품을 검색하여 정보를 찾을 수 있다.</p>
+        </div>
+    </div>
+    <hr>
+    <div class = "row text-center">
+    	<div class="col-sm-12">
+        	<h4 class="font">BRAND SHOP</h4>
+        </div>
+    </div>
+    <div class = "row text-center">
+        <div class="col-sm-4">
+        	<a href="https://www.gentlemonster.com/"><img src="/static/img/gentle.png" width="400" height="150"></a>
+        </div>
+        <div class="col-sm-4">
+        	<img src="/static/img/gucci.png" width="400" height="130">
+        </div>
+        <div class="col-sm-4">
+        	<img src="/static/img/reclow.jpg" width="400" height="130">
+        </div>
+        <div class="col-sm-4">
+        	<img src="/static/img/carin.png" width="400" height="130">
+        </div>
+        <div class="col-sm-4">
+        	<img src="/static/img/prada.png" width="400" height="130">
+        </div>
+        <div class="col-sm-4">
+        	<img src="/static/img/chanel.png" width="400" height="130">
+        </div>
+    </div>
+    
+{% endblock content %}
+
+{% block footer %}
+<footer class="fixed-bottom bg-dark">
+    <div class="text-white font-italic text-right mr-5">Copyright &copy; 2021 Glasses Book by Hyun</div>
+</footer>
+{% endblock %}

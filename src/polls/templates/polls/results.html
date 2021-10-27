@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{%block title%}Post Detail{%endblock%}
+{%block content%}
+
+<h1>[{{question.question_text}}] 설문 현재 결과</h1>
+<hr>
+<ul>
+	{% for choice in question.choice_set.all %}
+		<li>
+			{{choice.choice_text}} ▶ {{choice.votes}} vote{{choice.votes|pluralize}}
+		</li>
+	{% endfor %}
+</ul>
+
+<a href = "{% url 'polls:detail' question.id %}">
+	Vote Again?
+</a>
+
+{% endblock %}

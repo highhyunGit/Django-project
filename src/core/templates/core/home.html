@@ -1,0 +1,82 @@
+{% extends 'base.html'%}
+
+{%block title%}Django Crawling App{%endblock%}
+
+{% block extra-style %}
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #main {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        input[type='text'] {
+            width: 30%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px solid #343a40;
+        }
+
+        input[type='submit'] {
+            width: 50%;
+            padding: 5px;
+            background: #343a40;
+            color: white;
+            text-transform: uppercase;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        
+    </style>
+{% endblock extra-style %}
+{% block content %}
+<div id="main">
+    <h1 >검색하기</h1>
+    <br>
+    <form method="GET">
+        <div>
+            <label for="glasses"></label>
+            <input type="text" id="glasses" value="{{ request.GET.glasses }}" placeholder="SEARCH FOR" name="glasses"/>
+        </div>
+        <br>
+        <input type="submit" value="Submit"/>
+    </form>
+   
+    <br>
+
+    {% autoescape off %}
+    	{{ result.res1 }}
+
+    	{% if result %}
+    	
+    		        	
+     	{% endif %}
+     
+     	{% for img in img_list %}
+     		{{ img }}
+     	{% endfor %}
+     {% endautoescape %}
+    </form2>
+  
+</div>    
+{% endblock %}
+    	<!-- 
+        	<h4>브랜드 : {{ result.brand }}</h4>
+        	<h4>상품 : {{ result.name }}</h4>
+
+        	<h4>가격 : {{ result.price }}</h4>  
+        	
+              
+        <h4>판매처 : {{ result.shop }}</h4>
+        <h4>{{ result.price }}</h4>
+    	 -->
+    	 
