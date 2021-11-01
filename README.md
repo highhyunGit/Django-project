@@ -10,5 +10,5 @@
 · 크롤링(crawling)을 활용하여 웹 검색 결과를 가져올 수 있음
 <h2>GIF</h2>
 <img src="https://user-images.githubusercontent.com/89969398/139627608-30a47fb6-cdb5-4bf7-b857-446bb5f14f34.gif">
-크롤링(crawling) 구현
+<h3>크롤링(crawling) 구현</h3>
 <img src="https://user-images.githubusercontent.com/89969398/139632903-7e5ebd4f-6a27-4156-ad8d-814e4a11de12.gif">
