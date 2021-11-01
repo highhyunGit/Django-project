@@ -4,7 +4,7 @@
 · 사용언어 : Python / DJango / HTML
 <h2>Features</h2>
 · 인공지능을 이용한 상담 기능 구현 <br/>
-· CRUD 구현 <br/>
+· 게시글 CRUD 구현 <br/>
 · 설문조사 기능 구현 <br/>
 · Disqus를 활용한 댓글 기능 구현 <br/>
 · 크롤링(crawling)을 활용하여 웹 검색 결과를 가져올 수 있음
