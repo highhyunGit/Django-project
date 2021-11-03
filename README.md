@@ -14,3 +14,8 @@
 <img src="https://user-images.githubusercontent.com/89969398/139635476-b75883b8-4a51-47d7-be96-32461ebec6e7.gif">
 <h3>크롤링(Crawling) 구현</h3>
 <img src="https://user-images.githubusercontent.com/89969398/139632903-7e5ebd4f-6a27-4156-ad8d-814e4a11de12.gif">
+
+<h2>Team : WEAVER</h2>
+· 팀장 : 최한결(github.com/hangy3olchoi)
+· 팀원 : 이소율(github.com/soyurr)
+· 팀원 : 최 현(github.com/highhyunGit)
